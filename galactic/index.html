@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://file.garden/ZtUfbjZUIg1dW06S/galactic/favicon.png">
+    <title>team galactic</title>
+
+    <script>
+        window.location.hash = "blog";
+        window.location.hash = "portfolio";
+        window.location.hash = "home";
+    </script>
+</head>
+
+<style>
+    body {
+        background-color: #c2e2ff;
+        margin: auto;
+    }
+
+    .wrapper:target {
+        display: block;
+    }
+
+    .wrapper:not(target) {
+        display: none;
+    }
+
+    a {
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        text-decoration: none;
+        color: #4c6f8d;
+
+    }
+
+    a:hover {
+        font-style: italic;
+        text-decoration: none !important;
+        color: #0e3352;
+
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+
+    }
+
+    p,
+    h2 {
+        color: #4c6f8d;
+    }
+
+    h1 {
+        color: #225078;
+    }
+
+    span {
+        color: #225078;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    #standees img,
+    #standees-2 img,
+    #standees-3 img {
+        height: 650px;
+        filter: drop-shadow(5px 5px 0px #a2bcd3);
+
+        position: absolute;
+        left: 530px;
+        top: 90px;
+        z-index: 3;
+    }
+
+    .wrapper {
+        border: solid 3px #70a2d0;
+        border-radius: 35px;
+        width: 600px;
+        height: 600px;
+        margin: auto;
+        background-image: url('https://i.pinimg.com/564x/cd/39/6c/cd396c08a99c176933665f319df1bf9e.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-shadow: 0px 0 5px 3px #a2bcd3;
+
+        /* positioning */
+
+        position: relative;
+        top: 100px;
+        z-index: 1;
+    }
+
+    #header-img {
+        background-image: url('https://file.garden/ZtUfbjZUIg1dW06S/galactic/header-img.png');
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: cover;
+        box-shadow: 0 0 8px 8px #c2e2ff inset;
+        border-radius: 32px 32px 0px 0px;
+        width: auto;
+        height: 150px;
+
+        /* positioning */
+        position: relative;
+        z-index: -1;
+    }
+
+    #title {
+        color: white;
+        text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        font-size: 35px;
+
+        /* positioning */
+        position: absolute;
+        top: 72px;
+        left: 20px;
+    }
+
+    .content-box-1 {
+        overflow: scroll;
+        overflow-wrap: break-word;
+        text-align: justify;
+        background-color: #ddefff;
+        box-shadow: 0px 0 5px 3px #a2bcd3;
+        border: solid 2px #70a2d0;
+        border-radius: 20px;
+        height: 270px;
+        width: 270px;
+        padding: 10px;
+
+        /* positioning */
+        position: relative;
+        right: 165px;
+        top: 50px;
+        transform: rotate(-5deg);
+    }
+
+    #profile-pic {
+        border: solid 2px #70a2d0;
+        border-radius: 20px;
+        height: 150px;
+        float: left;
+        margin-right: 10px;
+        transition: all 0.5s;
+        transition: 0.8s ease;
+        cursor: pointer;
+    }
+
+    #profile-pic:hover {
+        transition: all 1.3s;
+        border-radius: 75px;
+        box-shadow: 0px 0px 2px 3px #a2bcd3;
+    }
+
+    .content-box-1 p {
+        text-transform: lowercase;
+        line-height: 23px;
+        text-align: justify;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .content-box-1 h2 {
+        margin: auto auto 10px auto;
+        font-size: 19.78px;
+    }
+
+    .content-box-1 span {
+        font-size: 1.82em;
+    }
+
+    .directory-box {
+        box-shadow: 0px 0 3px 2px #a2bcd3;
+        margin: auto;
+        background-color: #ddefff;
+        border: solid 1.5px #70a2d0;
+        border-radius: 15px;
+        height: 40px;
+        width: 200px;
+
+        /* positioning */
+        position: relative;
+        right: 305px;
+        top: 25px;
+        transform: rotate(-5deg);
+    }
+
+    .directory {
+        padding: 10px;
+        margin: auto;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .content-box-2 {
+        overflow: scroll;
+        line-height: 23px;
+        background-color: #ddefff;
+        box-shadow: 0px 0 3px 2px #a2bcd3;
+        border: solid 2px #70a2d0;
+        border-radius: 20px;
+        height: 430px;
+        width: 417px;
+
+        /* positioning */
+        position: relative;
+        bottom: 330px;
+        left: 170px;
+        z-index: -1;
+    }
+
+    .text h1 {
+        text-align: center;
+        margin: 10px auto 15px auto;
+    }
+
+    .content-box-2 h1 {
+        text-align: center;
+        margin: 10px auto 15px auto;
+    }
+
+    .text3 h1 {
+        text-align: center;
+        margin: 10px auto 15px auto;
+    }
+
+    #side-img {
+        border: solid 2px #70a2d0;
+        border-radius: 20px;
+        height: 170px;
+        margin-left: 15px;
+        margin-right: 15px;
+        float: right;
+    }
+
+    #side-img2 {
+        border: solid 2px #70a2d0;
+        border-radius: 20px;
+        height: 170px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+        margin-left: 60px;
+        margin-right: 20px;
+    }
+
+    .text p {
+        margin-left: 15px;
+        margin-right: 55px;
+        text-align: justify;
+        text-transform: lowercase;
+    }
+
+    .text2 p {
+        margin: auto;
+        width: 50%;
+        margin-bottom: 10px;
+        margin-top: 15px;
+        text-align: center;
+        text-transform: lowercase;
+    }
+
+    .text3 p {
+        margin: 12px;
+        text-align: justify;
+        text-transform: lowercase;
+    }
+
+    .contact {
+        border: solid 2px #70a2d0;
+        box-shadow: 0px 0 3px 2px #90adc7;
+        border-radius: 15px;
+        background-color: #ddefff;
+        height: 40px;
+        width: 200px;
+
+        /* positioning */
+
+        position: relative;
+        bottom: 335px;
+        left: 50px;
+    }
+
+    .contact p {
+        font-size: 15px;
+        text-align: center;
+        margin: 12px 0px 0px 0px;
+    }
+</style>
+
+<body>
+    <div class="wrapper" id="home">
+
+        <div class="standees">
+            <div id="standees"></div>
+
+            <!--Don't forget Jquery-->
+            <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+            <!--New images on load -->
+            <script>
+                //Add your images, we'll set the path in the next step
+                var images = ["https://file.garden/ZtUfbjZUIg1dW06S/galactic/saturn-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/mars-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/cyrus-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/jupiter-stand.png"];
+
+                var randomImage = images[Math.floor(Math.random() * images.length)];
+                console.log(randomImage);
+                // make the URL into a proper image tag
+                var image = "<img src='" + randomImage + "'>";
+                // append to the div
+                document.getElementById("standees").innerHTML = image;
+            </script>
+        </div>
+
+        <div class="header">
+            <div id="header-img"></div>
+            <h1 id="title">
+                galactic headquarters
+            </h1>
+        </div>
+
+        <div class="content-box-1">
+            <div class="song">
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+                <center>
+                    <audio id="audio" src="https://audio.jukehost.co.uk/iDRWJF4J3GVemIVM0dM3JSC2gNza0zRd"></audio>
+                    <img id="profile-pic" src="https://file.garden/ZtUfbjZUIg1dW06S/galactic/profile-pic.gif" alt="">
+                </center>
+
+                <script>
+                    document.getElementById("profile-pic").addEventListener("click", function () {
+                        document.getElementById("audio").play();
+                    });
+                </script>
+            </div>
+            <h2><i>commander</i><span>janica!</span></h2>
+
+            <p>hi! I'm Aero or Janica and I am a student at Kea'au High. I go by all pronouns. I love a lot of things,
+                such as video games like pokemon and ace attorney! the media i consume influence my personality, by
+                proxy influencing my sense of style and design (as you will most likely see by going through this
+                website).</p>
+        </div>
+
+        <div class="directory-box">
+            <div class="directory">
+                <a href="#home">home</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#blog">blog</a>
+            </div>
+        </div>
+
+        <div class="content-box-2">
+            <div class="text">
+                <h1>welcome to headquarters!</h1>
+                <img src="https://file.garden/ZtUfbjZUIg1dW06S/galactic/side-img.gif" alt="" id="side-img">
+                <p>welcome to headquarters, dear guest! please make yourself at home. while you're her, please don't
+                    forget to check out the directory: it leads to all kinds of places. fyi: this website is <b>not</b>
+                    made for mobile devices! <br><br> a little bit more about
+                    me, I am a Filipina who was born in Canada that moved to Hawai'i when I was very young. I pride
+                    myself in being a novice programmer and coder. <br><br> When I grow up, I aspire to be a lawyer.
+                    However, my backup plan is to become a full time Video Game Designer.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>need to contact me? <a href="https://debeste.straw.page">email me!</a></p>
+        </div>
+    </div>
+
+    <div class="wrapper" id="portfolio">
+
+        <div class="standees-2">
+            <div id="standees-2"></div>
+
+            <!--Don't forget Jquery-->
+            <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+            <!--New images on load -->
+            <script>
+                //Add your images, we'll set the path in the next step
+                var images = ["https://file.garden/ZtUfbjZUIg1dW06S/galactic/saturn-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/mars-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/cyrus-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/jupiter-stand.png"];
+
+                var randomImage = images[Math.floor(Math.random() * images.length)];
+                console.log(randomImage);
+                // make the URL into a proper image tag
+                var image = "<img src='" + randomImage + "'>";
+                // append to the div
+                document.getElementById("standees-2").innerHTML = image;
+            </script>
+        </div>
+
+        <div class="header">
+            <div id="header-img"></div>
+            <h1 id="title">
+                galactic headquarters
+            </h1>
+        </div>
+
+        <div class="content-box-1">
+            <img src="https://file.garden/ZtUfbjZUIg1dW06S/galactic/profile-pic.gif" alt="" id="profile-pic">
+            <h2><i>commander</i><span>janica!</span></h2>
+
+            <p>hi! I'm Aero or Janica and I am a student at Kea'au High. I go by all pronouns. I love a lot of things,
+                such as video games like pokemon and ace attorney! the media i consume influence my personality, by
+                proxy influencing my sense of style and design (as you will most likely see by going through this
+                website).</p>
+        </div>
+
+        <div class="directory-box">
+            <div class="directory">
+                <a href="#home">home</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#blog">blog</a>
+            </div>
+        </div>
+
+        <div class="content-box-2">
+            <h1>portfolio</h1>
+            <div class="text2">
+                <img id="side-img2" src="https://file.garden/ZtUfbjZUIg1dW06S/galactic/team-galactic.gif" alt="">
+                <div class="completed-work-box">
+                    <p>this is my portfolio, where all my <u>completed</u> projects will go.</p>
+                    <div class="my-work-box">
+                        <p>completed <a
+                                href="https://docs.google.com/presentation/d/17iJ-epoUK81P5mDwLm-vqirdPa9UO7O-j1yrIob6lC0/edit#slide=id.p"><b>career
+                                    exploration: video game designer</b></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>need to contact me? <a href="https://debeste.straw.page">email me!</a></p>
+        </div>
+    </div>
+
+    <div class="wrapper" id="blog">
+
+        <div class="standees-3">
+            <div id="standees-3"></div>
+
+            <!--Don't forget Jquery-->
+            <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js'></script>
+
+            <!--New images on load -->
+            <script>
+                //Add your images, we'll set the path in the next step
+                var images = ["https://file.garden/ZtUfbjZUIg1dW06S/galactic/saturn-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/mars-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/cyrus-stand.png", "https://file.garden/ZtUfbjZUIg1dW06S/galactic/jupiter-stand.png"];
+
+                var randomImage = images[Math.floor(Math.random() * images.length)];
+                console.log(randomImage);
+                // make the URL into a proper image tag
+                var image = "<img src='" + randomImage + "'>";
+                // append to the div
+                document.getElementById("standees-3").innerHTML = image;
+            </script>
+        </div>
+
+        <div class="header">
+            <div id="header-img"></div>
+            <h1 id="title">
+                galactic headquarters
+            </h1>
+        </div>
+
+        <div class="content-box-1">
+            <img src="https://file.garden/ZtUfbjZUIg1dW06S/galactic/profile-pic.gif" alt="" id="profile-pic">
+            <h2><i>commander</i><span>janica!</span></h2>
+
+            <p>hi! I'm Aero or Janica and I am a student at Kea'au High. I go by all pronouns. I love a lot of things,
+                such as video games like pokemon and ace attorney! the media i consume influence my personality, by
+                proxy influencing my sense of style and design (as you will most likely see by going through this
+                website).</p>
+        </div>
+
+        <div class="directory-box">
+            <div class="directory">
+                <a href="#home">home</a>
+                <a href="#portfolio">portfolio</a>
+                <a href="#blog">blog</a>
+            </div>
+        </div>
+
+        <div class="content-box-2">
+            <div class="text3">
+                <h1>blog</h1>
+                <img src="https://media1.tenor.com/m/Hey7IVbSg9oAAAAC/pokemon-pokeplush.gif" alt="" id="side-img">
+                <p>this is my blog where I will <u>share updates</u> on my various projects.</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <p>need to contact me? <a href="https://debeste.straw.page">email me!</a></p>
+        </div>
+    </div>
+
+</body>
+
+</html>

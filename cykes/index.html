@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/gif" href="https://64.media.tumblr.com/tumblr_m230wvHkTC1qfamg6.gif">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/cykes/index.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+    <title>courtroom revolutionnaire</title>
+</head>
+
+<style>
+    /* athena colors
+#D37912 - orange (hair)
+#7EB3DB - blue (headband) 
+#EDBD33 - yellow (jacket) */
+
+    @font-face {
+        src: url(https://dl.dropbox.com/s/uougf9v63jmphoj/Jojoba.otf);
+        font-family: jojoba;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .wrapper {
+        background-color: #fffaeb;
+        margin: auto;
+        width: 360px;
+        border: 4px solid #D37912;
+        box-shadow: 0px 0px 6px rgb(175, 139, 29);
+        border-radius: 25px;
+        padding: 20px;
+
+    }
+
+    .main {
+        display: flex;
+        gap: 20px;
+        font-family: jojoba;
+    }
+
+    /* header start */
+
+    #header-img {
+        width: 100%;
+        box-shadow: 0px 0px 5px 2px #d7b13f;
+        border-radius: 20px 20px 0px 0px;
+        margin-top: -10px;
+    }
+
+    .header h1 {
+        font-family: jojoba;
+        text-align: center;
+        font-size: 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        color: #D37912;
+    }
+
+    .header marquee {
+        font-size: 15px;
+    }
+
+    /* header end */
+
+    /* left start */
+
+    .left {
+        font-size: 15px;
+        width: 70%;
+    }
+
+    .left h2 {
+        font-size: 25px;
+        margin: auto;
+        padding: 7px 0px 7px 0px;
+        color: #D37912;
+    }
+
+    .left p {
+        margin: auto;
+        color: #ee9837;
+    }
+
+    .flags {
+        margin-top: 5px;
+        height: 25px;
+    }
+
+    /* profile picture start */
+
+    #profile-pic {
+        width: 100%;
+        transition: all 0.5s;
+        transition: 0.8s ease;
+    }
+
+    #profile-pic:hover {
+        background-color: #ffedb9;
+        transition: all 1.3s;
+        border-radius: 65px;
+        box-shadow: 0px 0px 5px 2px #d7b13f;
+    }
+
+    /* profile picture end */
+    /* music start */
+
+    /*-------MUSIC PLAYER BY GLENTHEMES-------*/
+    .sonata marquee {
+        text-transform: lowercase;
+        width: 140px;
+    }
+
+    #glenplayer02 {
+        margin-top: 6px;
+        display: flex;
+        z-index: 99;
+    }
+
+    #glenplayer02 a {
+        text-decoration: none;
+    }
+
+    #glenplayer02>div {
+        align-self: center;
+        -webkit-align-self: center;
+    }
+
+    .music-controls {
+        user-select: none;
+        -webkit-user-select: none;
+        width: 13px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+
+    .playy,
+    .pausee {
+        color: #D37912;
+        text-shadow: -1px 0 #76430a, 0 1px #76430a, 1px 0 #76430a, 0 -1px #76430a, 0 0;
+    }
+
+    /* color of play & pause buttons */
+
+    .pausee {
+        display: none;
+    }
+
+    .sonata {
+        margin-left: 10px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 14px;
+        color: #ffd453;
+        font-weight: bold;
+        text-shadow: -1px 0 #a07c0e, 0 1px #a07c0e, 1px 0 #a07c0e, 0 -1px #a07c0e, 0 0;
+        /* color of music note symbol */
+    }
+
+    .labeltext {
+        margin-left: 0px;
+        position: relative;
+        bottom: 10px;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+        font-size: 14px;
+        color: #ffd453;
+        font-weight: bold;
+        text-shadow: -1px 0 #a07c0e, 0 1px #a07c0e, 1px 0 #a07c0e, 0 -1px #a07c0e, 0 0;
+        /* color of song title */
+    }
+
+    /* music end */
+    /* left end */
+
+    /* right start */
+
+    .right {
+        background-color: #fffaeb;
+        height: 342px;
+        width: 250px;
+        border-radius: 20px;
+        overflow-y: scroll;
+        box-shadow: 0px 0px 5px 2px #d7b13f;
+        color: #ee9837;
+    }
+
+    /* mini-bio start */
+
+    #mini-bio-img {
+        width: 100%;
+        margin: auto;
+        box-shadow: 0px 0px 30px #d7b13f;
+    }
+
+    .mini-bio p {
+        padding: 0px 10px;
+        text-align: justify;
+    }
+
+    .mini-bio span {
+        color: #904d00;
+    }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="box">
+            <div class="header">
+                <img id="header-img" src="https://i.ibb.co/xC3qdWj/athena-banner.gif">
+                <h1>
+                    <marquee>single-handedly pushing the ace attorney agenda</marquee>
+                </h1>
+            </div>
+
+            <div class="main">
+                <div class="left">
+                    <img src="https://i.ibb.co/qN7crBy/athena-pet.gif" alt="" id="profile-pic">
+                    <h2>janica <span><img src="https://twst.ju.mp/assets/images/gallery06/07567221.gif?v=6c1b880a"
+                                alt=""></span>
+                    </h2>
+                    <p>janica or aero <br>
+                        any prns <br>
+                        <img class="flags"
+                            src="https://autism.crd.co/assets/images/gallery04/36748e82_original.jpg?v=1be2f3c4" alt="">
+                        <img class="flags" src="https://i.postimg.cc/d0rsyFX5/genderfluid-5-stripes-20-px.png"
+                            alt=""><img class="flags" src="https://i.postimg.cc/8c1zGYZt/pansexual-3-stripes-21-pxx.png"
+                            alt=""> <br>
+                        4teen <br>
+                        esfp
+                    </p>
+
+                    <!-------MUSIC PLAYER BY GLENTHEMES------->
+                    <script src="//static.tumblr.com/gtjt4bo/QRmphdsdv/glenplayer02.js"></script>
+
+                    <div id="glenplayer02">
+                        <div class="music-controls" onclick="songstart();">
+                            <div class="playy">►</div>
+                            <div class="pausee">♬</div>
+                        </div>
+                        <div class="sonata">
+                            <marquee> just a waste - pinkpantheress </marquee>
+                        </div>
+                        <div class="labeltext"></div>
+                    </div>
+
+                    <audio id="tune" src="https://audio.jukehost.co.uk/JaWoZzStwN7dmsPGWWLrrHRMyWYTjufm"></audio>
+                    <!--end music player-->
+
+                </div>
+
+                <div class="right">
+                    <div class="mini-bio">
+                        <img src="https://i.pinimg.com/736x/26/4a/63/264a63772974225a2d0baf57c6f2e539.jpg" alt=""
+                            id="mini-bio-img">
+                        <p>
+                            hai <img class="pix"
+                                src="https://biscuit.crd.co/assets/images/gallery02/5b5dea0d.gif?v=532faf5f" alt=""> im
+                            janica or aero or kazoo or whatever you know me by,, uhh yeah im 14 and 15 soon and i want
+                            my drivers lisence already fyi this box scrolls<br><br>
+
+                            i love ace attorney among a lot of other things like pokemon. sure yeah
+                            thats like it rn <img class="pix" src="https://i.postimg.cc/1V6LCHj7/y64.gif"
+                                alt=""><br><br>
+
+                            im not the best at making friends but literally just hit me up on instagram
+                            <span>(@6r34k)</span> or discord <span>(@y0uonk4zoo)</span> or something. <img
+                                src="https://watermelon.crd.co/assets/images/gallery10/e7c24ee3.gif?v=6332de85" alt=""
+                                class="pix"><br><br>
+
+                            i don't have that much of a dni list.. the main stuff would be <span>if youre a zionist,
+                                anti lgbtq and if you dont respect pronouns</span>. cant remember anything else at the
+                            top of my head
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<div class="labeltext"> </div>
+
+</html>
