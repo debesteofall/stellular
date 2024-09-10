@@ -1,9 +1,23 @@
 body {
-    margin: auto;
-    text-align: center;
-    width: 50%;
+    background: azure;
 }
 
-img {
-    width: 150px;
+.wrapper {
+    margin: auto;
+    width: 1050px;
+}
+
+.title {
+    font-size: 1.5em;
+}
+
+.banner {
+    width: 100%;
+}
+
+.xiao-fullbody-fade {
+    height: 790px;
+    position: relative;
+    bottom: 375px;
+    left: 770px;
 }
